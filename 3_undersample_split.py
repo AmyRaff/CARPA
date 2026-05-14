@@ -4,6 +4,8 @@ import random
 import shutil
 from collections import Counter, defaultdict
 
+# NOTE: this version uses random undersampling, not OneSidedSelection as published. Can easily be swapped out https://imbalanced-learn.org/stable/references/generated/imblearn.under_sampling.OneSidedSelection.html
+
 IMAGES_TXT = "unfiltered_images.txt"
 LABELS_TXT = "unfiltered_image_class_labels.txt"
 SRC_DIR = "filtered_images"
